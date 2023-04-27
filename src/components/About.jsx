@@ -5,7 +5,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.png";
 import arrow2 from "../assets/img/arrow2.png";
-import colorSharp from "../assets/img/color-sharp.png";
+import { FaThumbsUp } from "react-icons/fa";
+import { GiCoffeeCup } from "react-icons/gi";
+import { BsFillEmojiSmileFill } from "react-icons/bs";
+import { CgAwards } from "react-icons/cg";
+import "./education.css";
 
 export const Skills = () => {
   const responsive = {
@@ -99,7 +103,7 @@ export const Skills = () => {
                     style={{
                       width: "85%",
                       borderRadius: 4,
-                      backgroundColor: "#007bff",
+                      backgroundColor: "#343541",
                       transition: "width 2s ease",
                     }}
                     class="progress-bar"
@@ -136,7 +140,7 @@ export const Skills = () => {
                     style={{
                       width: "90%",
                       borderRadius: 4,
-                      backgroundColor: "#007bff",
+                      backgroundColor: "#343541",
                       transition: "width 2s ease",
                     }}
                     class="progress-bar"
@@ -172,7 +176,7 @@ export const Skills = () => {
                     style={{
                       width: "85%",
                       borderRadius: 4,
-                      backgroundColor: "#007bff",
+                      backgroundColor: "#343541",
                       transition: "width 2s ease",
                     }}
                     class="progress-bar"
@@ -209,7 +213,7 @@ export const Skills = () => {
                     style={{
                       width: "65%",
                       borderRadius: 4,
-                      backgroundColor: "#007bff",
+                      backgroundColor: "#343541",
                       transition: "width 2s ease",
                     }}
                     class="progress-bar"
@@ -245,7 +249,7 @@ export const Skills = () => {
                     style={{
                       width: "70%",
                       borderRadius: 4,
-                      backgroundColor: "#007bff",
+                      backgroundColor: "#343541",
                       transition: "width 2s ease",
                     }}
                     class="progress-bar"
@@ -282,7 +286,7 @@ export const Skills = () => {
                     style={{
                       width: "70%",
                       borderRadius: 4,
-                      backgroundColor: "#007bff",
+                      backgroundColor: "#343541",
                       transition: "width 2s ease",
                     }}
                     class="progress-bar"
@@ -297,9 +301,173 @@ export const Skills = () => {
           </div>
         </div>
         <br></br>
-        
+        <br></br>
+        <br></br>
+        <section
+          id="facts"
+          class="shadow-dark color-white background parallax padding-50"
+          data-image-src="#"
+          style={{
+            backgroundColor: "#343541",
+            borderRadius: "20px",
+            padding: " 40px 20px",
+          }}
+        >
+          <div class="row relative z-1">
+            <div class="col-md-3 col-sm-6">
+              {/* <!-- fact item --> */}
+              <div class="fact-item text-center">
+                <i
+                  style={{
+                    backgroundColor: "#FF5959",
+                    borderRadius: "50%",
+                    width: "50px",
+                    textAlign: "center",
+                    display: "inline-block",
+                    height: "50px",
+                    lineHeight: "50px",
+                  }}
+                >
+                  <FaThumbsUp style={{ color: "white", fontSize: "24px" }} />
+                </i>
+
+                <h2>27</h2>
+                <span>Projects completed</span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              {/* <!-- fact item --> */}
+              <div class="fact-item text-center">
+                <i
+                  style={{
+                    backgroundColor: "#FF5959",
+                    borderRadius: "50%",
+                    width: "50px",
+                    textAlign: "center",
+                    display: "inline-block",
+                    height: "50px",
+                    lineHeight: "50px",
+                  }}
+                >
+                  <GiCoffeeCup style={{ color: "white", fontSize: "24px" }} />
+                </i>
+                <h2 class="count">2765</h2>
+                <span>Hours of Support</span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              {/* <!-- fact item --> */}
+              <div class="fact-item text-center">
+                <i
+                  style={{
+                    backgroundColor: "#FF5959",
+                    borderRadius: "50%",
+                    width: "50px",
+                    textAlign: "center",
+                    display: "inline-block",
+                    height: "50px",
+                    lineHeight: "50px",
+                  }}
+                >
+                  <BsFillEmojiSmileFill
+                    style={{ color: "white", fontSize: "24px" }}
+                  />
+                </i>
+                <h2 class="count">350</h2>
+                <span>Days</span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              {/* <!-- fact item --> */}
+              <div class="fact-item text-center">
+                <i
+                  style={{
+                    backgroundColor: "#FF5959",
+                    borderRadius: "50%",
+                    width: "50px",
+                    textAlign: "center",
+                    display: "inline-block",
+                    height: "50px",
+                    lineHeight: "50px",
+                  }}
+                >
+                  <CgAwards style={{ color: "white", fontSize: "24px" }} />
+                </i>
+                <h2 class="count">18</h2>
+                <span>Certificates</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overlay"></div>
+        </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section
+          id="resume"
+          style={{
+            backgroundColor: "#343541",
+            padding: "60px",
+            borderRadius: "20px",
+            fontWeight: 300,
+          }}
+          class="shadow-blue white-bg padding"
+        >
+          <h3 class="section-title">Experience</h3>
+          <div class="spacer" data-height="80"></div>
+
+          {/* <!-- timeline --> */}
+          <div class="timeline">
+            <div class="entry">
+              <div class="title">
+                <span>2015 - 2019</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">EDUCATION</h4>
+                <p>Bachelor Degree of Computer Science and Technology</p>
+                <p>At Northwestern Polytechnical University</p>
+              </div>
+            </div>
+            <div class="entry">
+              <div class="title">
+                <span>2019 November - 2020 march</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">IT CONSULTANT</h4>
+                <p>
+                  Medicus Mundi north province, Rwanda Helped coworkers to learn
+                  about our UI Managed up to 3 projects
+                </p>
+                <p>Helped coworkers to learn about our UI</p>
+              </div>
+            </div>
+
+            <div class="entry">
+              <div class="title">
+                <span>2021 june - 2022 November</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">CONSULTANT AT APPEN</h4>
+                <p>
+                  online Freelancing learn from different website such as
+                  Coursera and FreecodeCamp web development, python, Angular Js
+                </p>
+              </div>
+            </div>
+            <div class="entry">
+              <div class="title">
+                <span>2022 December - 2023 April</span>
+              </div>
+              <div class="body">
+                <h4 class="mt-0">Web Developer at KLAB RW</h4>
+                <p>web developer, React Js, TailwindCSS, ReduxToolKit</p>
+              </div>
+            </div>
+            <span class="timeline-line"></span>
+          </div>
+        </section>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
 };

@@ -1,0 +1,83 @@
+.timeline {
+    position: relative;
+    padding: 70px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0px;
+    left: calc(20% + 2px);
+    bottom: 0px;
+    width: 1px;
+    background: #FF5959;
+}
+
+.timeline-line::before,
+.timeline-line::after {
+    content: "";
+    display: block;
+    border-radius: 100%;
+    background: #FF5959;
+    position: absolute;
+    left: -3px;
+    height: 7px;
+    width: 7px;
+}
+
+.timeline-line::before {
+    top: 0;
+}
+
+.timeline-line::after {
+    bottom: 0;
+}
+
+.timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.entry {
+    clear: both;
+    position: relative;
+}
+
+.entry:last-of-type .body {
+    margin-bottom: 0;
+}
+
+.entry .title {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.entry .title:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FF5959;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 4.5px;
+    top: 15%;
+    right: -8px;
+    z-index: 1;
+}
+
+.entry .body {
+    margin: 0 0 6em;
+    float: right;
+    width: 80%;
+    padding-left: 60px;
+   
+    
+}
+
+.entry .body p {
+    margin-bottom: 0;
+    color:#d1c6c6;
+    font-weight: 100;
+}
