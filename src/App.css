@@ -2,17 +2,17 @@
 @font-face {
 	font-family: Centra;
 	src: url('./assets/fonts/CentraNo2-Bold.ttf');
-	font-weight: 700;
-}
-@font-face {
-	font-family: Centra;
-	src: url('./assets/fonts/CentraNo2-Medium.ttf');
 	font-weight: 500;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/fonts/CentraNo2-Book.ttf');
+	src: url('./assets/fonts/CentraNo2-Medium.ttf');
 	font-weight: 400;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/fonts/CentraNo2-Book.ttf');
+	font-weight: 300;
 }
 
 /************ Default Css ************/
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-weight: 400;
+  font-weight: 200;
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
@@ -549,7 +549,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #d1b412;
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
@@ -562,7 +562,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.2em;
 }
 .new-email-bx {
-  background: #fff;
+  background: #966F33;
   padding: 5px;
   border-radius: 20px;
   position: relative;
@@ -617,4 +617,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.progress {
+  height: 3px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #EBEBEB;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 3px;
+  color: #fff;
+  text-align: center;
+  background-color: #FF5959;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
 }
